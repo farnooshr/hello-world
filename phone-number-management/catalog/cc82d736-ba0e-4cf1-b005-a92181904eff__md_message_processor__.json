@@ -1,0 +1,13 @@
+{
+    "inputMessageMetadata": {
+        "flowVariables": {
+            "SIDGS_out": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "sidgs_out_json"
+            }
+        }
+    },
+    "outputMessageMetadata": {},
+    "id": "cc82d736-ba0e-4cf1-b005-a92181904eff",
+    "version": "5.2.0.0"
+}

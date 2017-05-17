@@ -1,0 +1,61 @@
+{
+  "getAccountByAccountNumberResponse": {
+    "accountByAccountNumberResponse": {
+      "billingAccountNum": "22478664",
+      "accountTypeCd": "I",
+      "accountSubTypeCd": "F",
+      "activationDt": "2011-07-13T00:00:00-04:00",
+      "billCycleNum": "39",
+      "billCycleCloseDayDt": "2017-04-09T00:00:00-04:00",
+      "billConfirmationStatusCd": "C",
+      "currentStatusActivityReasonCd": "CA",
+      "currentStatusCd": "O",
+      "currentStatusDt": "2011-07-13T00:00:00-04:00",
+      "deliveryMethodCd": "9",
+      "billSequenceNum": "69",
+      "brandId": "1",
+      "creditClassCd": "D",
+      "creditLimitAmt": "0.0",
+      "creditSequenceNum": "671319745",
+      "currentAccountBalanceAmt": "0.00",
+      "cycleCloseDayTxt": "9",
+      "deactivationDt": "2011-07-13T00:00:00-04:00",
+      "parentCustomerId": "22478664",
+      "paymentDueDt": "2017-05-04T00:00:00-04:00",
+      "lastPaymentDt": "2017-04-26T00:00:00-04:00",
+      "lastPaymentAmt": "16.95",
+      "iDENInd": "false",
+      "banSegmentCd": "TCSO",
+      "banSubSegmentCd": "OTHR",
+      "address": {
+        "primaryLineTxt": " 50 CASTLEWOOD",
+        "cityName": " TORONTO",
+        "provinceCd": " ON",
+        "postalCd": " M5N2L2",
+        "countryName": " CAN"
+      },
+      "contactName": {
+        "title": "",
+        "firstName": " FRED",
+        "middleInitial": "",
+        "lastName": " CAPRILLI"
+      },
+      "paymentMethod": {
+        "paymentMethodCd": "C",
+        "creditCard": {
+          "first6Num": "452088",
+          "last4Num": "1644",
+          "expiryMonth": "7",
+          "expiryYear": "2017",
+          "tokenNum": "100000000000012769725"
+        }
+      },
+      "pinNum": "1122",
+      "postpaidInd": "true",
+      "delinquentInd": "false",
+      "hotlinedInd": "false",
+      "activeSubscribersCountNum": "1",
+      "suspendedSubscribersCountNum": "0"
+    }
+  }
+}

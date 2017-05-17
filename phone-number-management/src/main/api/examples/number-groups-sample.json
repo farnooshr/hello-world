@@ -1,0 +1,57 @@
+{
+	"status": {
+		"statusCd": "200",
+		"statusTxt": "OK"
+	},
+	"provinceGroupList": [
+		{
+			"provinceCd": "NB",
+			"provinceTxt": "New Brunswick",
+			"numberGroupList": [
+				{
+					"numberGroupCd": "BAT",
+					"cityTxt": "BATHURST",
+					"npaNxxList": [
+						"506252", "506480", "506549"
+					]
+				}, {
+					"numberGroupCd": "W67",
+					"cityTxt": "WYNYARD",
+					"npaNxxList": [
+						"306560"
+					]
+				}, {
+					"numberGroupCd": "YOR",
+					"cityTxt": "YORKTON",
+					"npaNxxList": [
+						"306316", "306621"
+					]
+				}
+			]
+		}, {
+			"provinceCd": "ON",
+			"provinceTxt": "Ontario",
+			"numberGroupList": [
+				{
+					"numberGroupCd": "AJX",
+					"cityTxt": "AJAX-PICKERING",
+					"npaNxxList": [
+						"289423", "289987", "905550"
+					]
+				}, {
+					"numberGroupCd": "ALL",
+					"cityTxt": "ALLISTON",
+					"npaNxxList": [
+						"249594", "705890"
+					]
+				}, {
+					"numberGroupCd": "AUR",
+					"cityTxt": "AURORA",
+					"npaNxxList": [
+						"289879"
+					]
+				}
+			]
+		}
+	]
+}

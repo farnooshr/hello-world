@@ -1,0 +1,65 @@
+{
+  "getServiceExtendedInfoResponse": {
+    "getServiceExtendedInfoResponseType": {
+      "dateTimeStamp": "2017-05-10T14:20:13.560-04:00",
+      "messageType": "Success",
+      "transactionId": "f711fa65-17b2-467a-96c8-f3a6da016e80",
+      "startTime": "2017-05-10T14:20:13.560-04:00",
+      "serviceExtendedInformationList": {
+        "serviceCode": "PTTMWA15P",
+        "provinceCodeList": "MB",
+        "provinceCodeList": "NB",
+        "accountTypeList": {
+          "accountType": "I",
+          "accountSubType": "F"
+        },
+        "accountTypeList": {
+          "accountType": "I",
+          "accountSubType": "R"
+        },
+        "socGroupList": "PCCONS   ",
+        "socGroupList": "PCRMS    ",
+        "socGroupList": "PCCADATAC",
+        "socGroupList": "PC11     ",
+        "socGroupList": "PCRLHC1  ",
+        "socGroupList": "PMSCLL   ",
+        "socGroupList": "PCSMSCSC ",
+        "socGroupList": "PCAMB1   ",
+        "socGroupList": "XPCV61   ",
+        "socGroupList": "PCSMNA   ",
+        "socGroupList": "PICMB2   ",
+        "socGroupList": "PC911    ",
+        "socGroupList": "PCAMB    ",
+        "socGroupList": "PCM2YR   ",
+        "socGroupList": "PCMMTM   ",
+        "socGroupList": "PCINTC   ",
+        "socGroupList": "PCRMBM   ",
+        "socGroupList": "PC0509   ",
+        "socGroupList": "PCUSRP   ",
+        "socGroupList": "PCOMB    ",
+        "socGroupList": "PCLREW   ",
+        "socGroupList": "PCMB1    ",
+        "socGroupList": "PCVVML   ",
+        "socGroupList": "PCUNL2   ",
+        "socGroupList": "PCMB3    ",
+        "socGroupList": "PCNINC   ",
+        "socGroupList": "PCINTA   ",
+        "socGroupList": "PCM1YR   ",
+        "socGroupList": "PCAPN1   ",
+        "socGroupList": "PCIN1    ",
+        "socGroupList": "PCTUPNOTE",
+        "socGroupList": "PC28614  ",
+        "socGroupList": "PCNOIP   ",
+        "socGroupList": "PCWLAMB  ",
+        "socGroupList": "CSMTCSPPG",
+        "socGroupList": "PCCON50  ",
+        "socGroupList": "PCSMCR060",
+        "socGroupList": "PCSM60NBS",
+        "socGroupList": "PPDA     ",
+        "socGroupList": "PCSMROADW",
+        "socGroupList": "PCSMVIP  ",
+        "socGroupList": "PCTCS10  "
+      }
+    }
+  }
+}

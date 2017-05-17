@@ -1,0 +1,9 @@
+{
+  "status": { 
+  "statusCd": "500", 
+  "statusSubCd": "SMS-F", 
+  "statusTxt": "", 
+  "systemErrorTimeStamp": "Tue Oct 25 16:52:05 EDT 2016", 
+  "systemErrorTxt": "Unable to retrieve number groups"
+  }
+}

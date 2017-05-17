@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd
+http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="phone_number_mgmt_api-httpListenerConfig" host="0.0.0.0" port="${http.port}" doc:name="HTTP Listener Configuration"/>
+    <apikit:config name="phone_number_mgmt_api-config" raml="phone_number_mgmt_api.raml" consoleEnabled="false" doc:name="Router"/>
+    <ws:consumer-config name="Web_Service_Consumer" service="SubscriberInformationDataGridService_v1_3" port="SubscriberInformationDataGridServicePort" serviceAddress="https://soa-mp-laird-pr.tsl.telus.com:443/cmo/selfmgmt/subscriberinformationdatagrid/SubscriberInformationDataGridService_v1_3_vs0" connectorConfig="HTTP_Request_Configuration" wsdlLocation="http://ln99160.corp.ads:10000/rest/services/uddi:5388db71-095b-11e5-9cc3-f0f8a3443ba2/wsdl" doc:name="Web Service Consumer"/>
+    <http:request-config name="HTTP_Request_Configuration" protocol="HTTPS" doc:name="HTTP Request Configuration">
+        <http:basic-authentication username="APP_SELFSERVEUSGBIZSVC" password="soaorgid" preemptive="true"/>
+        <tls:context>
+            <tls:trust-store path="${trust.store}" password="password" type="jks"/>
+            <tls:key-store type="jks" path="${trust.store}" alias="cacerts" keyPassword="password" password="password"/>
+        </tls:context>
+    </http:request-config>
+    <ws:consumer-config name="Web_Service_Consumer1" service="BillingAccountDataGridService_v1_5" port="BillingAccountDataGridServicePort" serviceAddress="https://soa-mp-laird-pr.tsl.telus.com:443/v1-5/cmo/selfmgmt/billingaccountdatagrid/billingaccountdatagridservice-v1-5_vs0" wsdlLocation="http://ln99160.corp.ads:10000/rest/services/uddi:310aeb5d-5ca0-11e5-a657-b37137a22141/wsdl" doc:name="Web Service Consumer" connectorConfig="HTTP_Request_Configuration1">
+     
+    </ws:consumer-config>
+   
+    <ws:consumer-config name="Web_Service_Consumer2" service="ServiceOrderReferenceService_v5_1" port="ServiceOrderReferenceServicePort" serviceAddress="https://soa-mp-laird-pr.tsl.telus.com:443/v5/smo/ordermgmt/serviceorderreference/ServiceOrderReferenceService_v5_1_vs0" wsdlLocation="http://ln99160.corp.ads:10000/rest/services/uddi:6fec2bec-fb0e-11e4-9cc3-f0f8a3443ba2/wsdl" doc:name="Web Service Consumer" connectorConfig="HTTP_Request_Configuration2"/>
+    
+    <ws:consumer-config name="RORS" service="ResourceOrderReferenceService_v1_1" port="ResourceOrderReferenceServicePort" serviceAddress="https://soa-mp-laird-pr.tsl.telus.com:443/RMO/OrderMgmt/ResourceOrderReference/ResourceOrderReferenceService_v1_1_1_vs0" wsdlLocation="http://ln99160.corp.ads:10000/rest/services/uddi:e0318b66-1824-11e4-b9fb-daeab9294710/wsdl" doc:name="Web Service Consumer" connectorConfig="HTTP_Request_Configuration3"/>
+    
+    <http:request-config name="HTTP_Request_Configuration1" protocol="HTTPS" doc:name="HTTP Request Configuration">
+        <http:basic-authentication username="APP_SELFSERVEUSGBIZSVC" password="soaorgid" preemptive="true"/>
+        <tls:context>
+            <tls:trust-store path="${trust.store}" password="password" type="jks"/>
+            <tls:key-store type="jks" path="${trust.store}" alias="cacerts" keyPassword="password" password="password"/>
+        </tls:context>
+    </http:request-config>
+    <http:request-config name="HTTP_Request_Configuration2" protocol="HTTPS" doc:name="HTTP Request Configuration">
+        <http:basic-authentication username="APP_SELFSERVEUSGBIZSVC" password="soaorgid" preemptive="true"/>
+        <tls:context>
+            <tls:trust-store path="${trust.store}" password="password" type="jks"/>
+            <tls:key-store type="jks" path="${trust.store}" alias="cacerts" keyPassword="password" password="password"/>
+        </tls:context>
+    </http:request-config>
+    <http:request-config name="HTTP_Request_Configuration3" protocol="HTTPS" doc:name="HTTP Request Configuration">
+        <http:basic-authentication username="APP_SELFSERVEUSGBIZSVC" password="soaorgid"/>
+        <tls:context>
+            <tls:trust-store path="${trust.store}" password="password" type="jks"/>
+            <tls:key-store type="jks" path="${trust.store}" alias="cacerts" keyPassword="password" password="password"/>
+        </tls:context>
+    </http:request-config>
+    <flow name="phone_number_mgmt_api-main">
+        <http:listener config-ref="phone_number_mgmt_api-httpListenerConfig" path="/api/*" doc:name="HTTP"/>
+        <apikit:router config-ref="phone_number_mgmt_api-config" doc:name="APIkit Router"/>
+        <exception-strategy ref="phone_number_mgmt_api-apiKitGlobalExceptionMapping" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <flow name="phone_number_mgmt_api-console">
+        <http:listener config-ref="phone_number_mgmt_api-httpListenerConfig" path="/console/*" doc:name="HTTP"/>
+        <apikit:console config-ref="phone_number_mgmt_api-config" doc:name="APIkit Console"/>
+    </flow>
+    <flow name="put:/account/{ban}/sub/{sub}/phone-number:application/json:phone_number_mgmt_api-config">
+        <set-payload value="{&#xD;&#xA;   &quot;status&quot; : {&#xD;&#xA;      &quot;statusCd&quot; : &quot;200&quot;,&#xD;&#xA;      &quot;statusTxt&quot; : &quot;Success&quot;,&#xD;&#xA;      &quot;systemErrorTimeStamp&quot; : &quot;2017-03-01T14:59:13&quot;&#xD;&#xA;   },&#xD;&#xA;   &quot;warningErrorList&quot; : [ &quot;SSF_CHARGE&quot;, &quot;PRODUCT_INSTANCE_UPDATE&quot; ]&#xD;&#xA;}" doc:name="Set Payload"/>
+    </flow>
+    <flow name="get:/account/{ban}/sub/{sub}/available-number-groups:phone_number_mgmt_api-config">
+        <set-variable variableName="language_var" value="#[message.inboundProperties.'http.query.params'.language]" doc:name="Variable"/>
+        <logger message="language: #[flowVars.language_var]" level="INFO" doc:name="Logger"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://xmlschema.tmi.telus.com/srv/CMO/SelfMgmt/SubscriberInformationDataGridServiceRequestResponse_v1
+---
+{
+	ns0#getSubscriberByPhoneNumber: {
+		ns0#phoneNum: flowVars.sub
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getSubscriberByPhoneNumber" doc:name="SIDGS"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="f7d87ef4-f013-4924-b4da-3c6e4c223f73">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload]]></dw:set-payload>
+        </dw:transform-message>
+        <set-variable variableName="SIDGS_out" value="#[payload]" mimeType="application/json" doc:name="SIDGS output"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://xmlschema.tmi.telus.com/srv/CMO/SelfMgmt/BillingAccountDataGridServiceRequestResponse_v1
+---
+{
+	ns0#getAccountByAccountNumber: {
+		ns0#billingAccountNum: flowVars.ban as :number,
+		ns0#maxSubscriberListSize: null
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="Web_Service_Consumer1" operation="getAccountByAccountNumber" doc:name="BADGS"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="e472ae9a-bb58-4e6b-a1d6-08f1063c3a7a">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload]]></dw:set-payload>
+        </dw:transform-message>
+        <set-variable variableName="BADGS_output" value="#[payload]" mimeType="application/json" doc:name="BADGS output"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.language_var == &quot;en&quot;]">
+                <logger message="geting dynamic data" level="INFO" doc:name="Logger"/>
+                <dw:transform-message doc:name="Transform Message" metadata:id="cc82d736-ba0e-4cf1-b005-a92181904eff">
+                    <dw:input-variable mimeType="application/json" variableName="SIDGS_out"/>
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://xmlschema.tmi.telus.com/srv/SMO/OrderMgmt/ServiceOrderReferenceServiceRequestResponse_v5
+%namespace ns1 http://xmlschema.tmi.telus.com/srv/CMO/SelfMgmt/SubscriberInformationDataGridServiceRequestResponse_v1
+---
+{
+	ns0#getServiceExtendedInfo: {
+		ns0#serviceCodeList: flowVars.SIDGS_out.getSubscriberByPhoneNumberResponse.subscriberByPhoneNumberResponse.pricePlanCd
+	}
+}]]></dw:set-payload>
+                </dw:transform-message>
+                <ws:consumer config-ref="Web_Service_Consumer2" operation="getServiceExtendedInfo" doc:name="SORS"/>
+                <dw:transform-message doc:name="Transform Message">
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload]]></dw:set-payload>
+                </dw:transform-message>
+            </when>
+            <otherwise>
+                <logger message="getting static data" level="INFO" doc:name="Logger"/>
+                <parse-template location="${sors.static}" doc:name="Parse Template"/>
+            </otherwise>
+        </choice>
+        <set-variable variableName="SORS_out" value="#[payload]" mimeType="application/json" doc:name="Variable" metadata:id="36001dfa-4811-443e-8069-72c408bc7973"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0
+---
+{
+	ns0#getAvailableNumberGroups: {
+		ns0#accountType: flowVars.BADGS_output.getAccountByAccountNumberResponse.accountByAccountNumberResponse.accountTypeCd,
+		ns0#accountSubType: flowVars.BADGS_output.getAccountByAccountNumberResponse.accountByAccountNumberResponse.accountSubTypeCd,
+		ns0#productType: "C",
+		ns0#equipmentType: "P",
+		ns0#marketAreaCode: "TLS"
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+
+
+       
+        <ws:consumer config-ref="RORS" operation="getAvailableNumberGroups" doc:name="RORS"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="ecfca5be-141f-4acc-bdbb-848da2f86ee6">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload]]></dw:set-payload>
+        </dw:transform-message>
+        <set-variable variableName="RORS_out" value="#[payload]" mimeType="application/json" doc:name="Variable" metadata:id="584f927c-7ea5-4165-a25b-95ab52734285"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="d26a14a3-4976-49af-baae-a0466b051ea5">
+            <dw:input-variable mimeType="application/json" variableName="RORS_out"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+%var provinceNames = flowVars.SORS_out.getServiceExtendedInfoResponse.getServiceExtendedInfoResponseType.serviceExtendedInformationList.*provinceCodeList pluck $
+%var groupNames = flowVars.RORS_out.getAvailableNumberGroupsResponse.*numberGroup pluck $
+---
+{
+	provinceGroupList: groupNames filter (
+		(numberGroup , indexOfNumberGroup) -> 
+          provinceNames contains numberGroup.provinceCode
+	)
+	 map ((numberGroup , indexOfNumberGroup) -> {
+		provinceCd: numberGroup.provinceCode,
+		numberGroupList: [{
+			numberGroupCd: numberGroup.code,
+			cityTxt: numberGroup.description,
+			npaNxxList: numberGroup.*npaNXX map ((npaNXX , indexOfNpaNXX) -> npaNXX)
+		}]
+	 })
+}]]></dw:set-payload>
+        </dw:transform-message>
+
+
+      
+	
+    </flow>
+
+    <flow name="get:/account/{ban}/sub/{sub}/phone-number-change-eligibility:phone_number_mgmt_api-config">
+        <logger level="INFO" doc:name="Logger"/>
+
+    </flow>
+    <flow name="get:/account/{ban}/sub/{sub}/available-phone-numbers:phone_number_mgmt_api-config">
+        <set-payload value="{&#xA;   &quot;status&quot;:    {&#xA;      &quot;statusCd&quot;: &quot;200&quot;,&#xA;      &quot;statusTxt&quot;: &quot;OK&quot;&#xA;   },&#xA;   &quot;phoneNumberList&quot;:    [&#xA;      &quot;6474650432&quot;,&#xA;      &quot;6474652417&quot;,&#xA;      &quot;6474652658&quot;,&#xA;      &quot;6474652864&quot;,&#xA;      &quot;6474653042&quot;,&#xA;      &quot;6474653058&quot;,&#xA;      &quot;6474653124&quot;&#xA;   ]&#xA;}" doc:name="Set Payload"/>
+    </flow>
+
+    <apikit:mapping-exception-strategy name="phone_number_mgmt_api-apiKitGlobalExceptionMapping">
+        <apikit:mapping statusCode="404">
+            <apikit:exception value="org.mule.module.apikit.exception.NotFoundException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Resource not found&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="405">
+            <apikit:exception value="org.mule.module.apikit.exception.MethodNotAllowedException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Method not allowed&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="415">
+            <apikit:exception value="org.mule.module.apikit.exception.UnsupportedMediaTypeException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Unsupported media type&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="406">
+            <apikit:exception value="org.mule.module.apikit.exception.NotAcceptableException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Not acceptable&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="400">
+            <apikit:exception value="org.mule.module.apikit.exception.BadRequestException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Bad request&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+    </apikit:mapping-exception-strategy>
+</mule>

@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "badgs_out_json"
+        }
+    },
+    "id": "e472ae9a-bb58-4e6b-a1d6-08f1063c3a7a",
+    "version": "5.2.0.0"
+}

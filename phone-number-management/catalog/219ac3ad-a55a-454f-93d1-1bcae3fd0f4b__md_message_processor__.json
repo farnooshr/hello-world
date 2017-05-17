@@ -1,0 +1,23 @@
+{
+    "inputMessageMetadata": {
+        "flowVariables": {
+            "RPRS_out": {},
+            "SORS_out": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "sors_out_json_1"
+            },
+            "RORS_out": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "rors_out"
+            }
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "numgroups_sampepe_1"
+        }
+    },
+    "id": "219ac3ad-a55a-454f-93d1-1bcae3fd0f4b",
+    "version": "5.2.0.0"
+}

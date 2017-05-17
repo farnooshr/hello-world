@@ -1,0 +1,2600 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getAvailableNumberGroups</id>
+        <displayName>getAvailableNumberGroups</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:accountType</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</namespaceURI>
+                      <localPart>AccountTypeCode</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</namespaceURI>
+                    <localPart>accountType</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:accountSubType</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</namespaceURI>
+                      <localPart>AccountSubTypeCode</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</namespaceURI>
+                    <localPart>accountSubType</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:productType</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://schemas.telus.com/eca/common_types_2_1</namespaceURI>
+                      <localPart>ProductType</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</namespaceURI>
+                    <localPart>productType</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:equipmentType</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://schemas.telus.com/eca/common_types_2_1</namespaceURI>
+                      <localPart>EquipmentType</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</namespaceURI>
+                    <localPart>equipmentType</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:marketAreaCode</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                      <localPart>string</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</namespaceURI>
+                    <localPart>marketAreaCode</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</namespaceURI>
+          <localPart>getAvailableNumberGroups</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:common=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ns1=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ref=&quot;http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot;&gt;&#xd;
+	&lt;xsd:import namespace=&quot;http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0&quot;/&gt;&#xd;
+	&lt;xsd:import namespace=&quot;http://schemas.telus.com/eca/common_types_2_1&quot;/&gt;&#xd;
+	&lt;xsd:element name=&quot;getNumberGroupByPhoneNumberAndProductType&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;phoneNumber&quot; type=&quot;common:PhoneNumber&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;productType&quot; type=&quot;common:ProductType&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getNumberGroupByPhoneNumberAndProductTypeResponse&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;numberGroup&quot; nillable=&quot;true&quot; type=&quot;ref:NumberGroup&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getNumberGroupByPortedInPhoneNumberProductType&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;phoneNumber&quot; type=&quot;common:PhoneNumber&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;productType&quot; type=&quot;common:ProductType&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getNumberGroupByPortedInPhoneNumberProductTypeResponse&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;numberGroup&quot; nillable=&quot;true&quot; type=&quot;ref:NumberGroup&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getAvailableNumberGroups&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;accountType&quot; type=&quot;ref:AccountTypeCode&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;accountSubType&quot; type=&quot;ref:AccountSubTypeCode&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;productType&quot; type=&quot;common:ProductType&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;equipmentType&quot; type=&quot;common:EquipmentType&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;marketAreaCode&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getAvailableNumberGroupsResponse&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element maxOccurs=&quot;1000&quot; minOccurs=&quot;0&quot; name=&quot;numberGroup&quot; type=&quot;ref:NumberGroup&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getAvailablePhoneNumberList&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:annotation&gt;&#xd;
+					&lt;xsd:documentation&gt;This operation Retrieves phone numbers available for assignment in the system governed by the PhoneNumberReservation search criteria&lt;/xsd:documentation&gt;&#xd;
+				&lt;/xsd:annotation&gt;&#xd;
+				&lt;xsd:element name=&quot;accountNumber&quot; type=&quot;common:AccountNumber&quot;/&gt;&#xd;
+				&lt;xsd:element minOccurs=&quot;0&quot; name=&quot;subscriberId&quot; type=&quot;common:SubscriberNumber&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;numberGroup&quot; type=&quot;ref:NumberGroup&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;productType&quot; type=&quot;common:ProductType&quot;&gt;&#xd;
+					&lt;xsd:annotation&gt;&#xd;
+						&lt;xsd:documentation&gt;C - PRODUCT_TYPE_PCS;&#xd;
+P- PRODUCT_TYPE_PAGER&#xd;
+I - PRODUCT_TYPE_IDEN&lt;/xsd:documentation&gt;&#xd;
+					&lt;/xsd:annotation&gt;&#xd;
+				&lt;/xsd:element&gt;&#xd;
+				&lt;xsd:element minOccurs=&quot;0&quot; name=&quot;phoneNumberPattern&quot; type=&quot;xsd:string&quot;&gt;&#xd;
+					&lt;xsd:annotation&gt;&#xd;
+						&lt;xsd:documentation&gt;Phone number search pattern.  For &apos;Like Matches&apos;  this should be the 10 digit phone number of an existing subscriber.  Otherwise,  it should be 10 digit combination of numbers and asterixes (*), where asterisk  means any number.  If &apos;phoneNumberPattern&apos; contains less than 10 characters, it will be padded with asterixes.&lt;/xsd:documentation&gt;&#xd;
+					&lt;/xsd:annotation&gt;&#xd;
+				&lt;/xsd:element&gt;&#xd;
+				&lt;xsd:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;asianFriendlyInd&quot; type=&quot;xsd:boolean&quot;&gt;&#xd;
+					&lt;xsd:annotation&gt;&#xd;
+						&lt;xsd:documentation&gt;isAsian indicator. true/false(default). &lt;/xsd:documentation&gt;&#xd;
+					&lt;/xsd:annotation&gt;&#xd;
+				&lt;/xsd:element&gt;&#xd;
+				&lt;xsd:element name=&quot;maxNumber&quot; type=&quot;xsd:double&quot;&gt;&#xd;
+					&lt;xsd:annotation&gt;&#xd;
+						&lt;xsd:documentation&gt;maxinum numbers to be retrieved. &lt;/xsd:documentation&gt;&#xd;
+					&lt;/xsd:annotation&gt;&#xd;
+				&lt;/xsd:element&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getAvailablePhoneNumberListResponse&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element maxOccurs=&quot;1000&quot; name=&quot;phoneNumberList&quot; type=&quot;common:PhoneNumber&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+&lt;/xsd:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://schemas.telus.com/eca/common_types_2_1&quot;&gt;&#xd;
+&#xd;
+  &lt;!-- simple types --&gt;&#xd;
+	&lt;xs:simpleType name=&quot;AccountNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,8}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CustomerId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,8}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SubscriberNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{0,19}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;BrandId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,21}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CreditScenario&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\p{Lu}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;OtherPhoneType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;FAX&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;PAGER&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CVMS&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;MOBILE&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PhoneNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PhoneNumberExtension&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{0,4}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;BillCycle&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,1}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SerialNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{1,20}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ProductType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\p{Lu}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PoolingGroupId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;1&quot;/&gt; &lt;!-- AIRTIME --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;2&quot;/&gt; &lt;!-- DIRECT_CONNECT --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;3&quot;/&gt; &lt;!-- AIRTIME_AND_DIRECT_CONNECT --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;4&quot;/&gt; &lt;!-- LONG_DISTANCE --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;5&quot;/&gt; &lt;!-- DIRECT_CONNECT_LD --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;6&quot;/&gt; &lt;!-- LONG_DISTANCE_AND_DIRECT_CONNECT_LD --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;7&quot;/&gt; &lt;!-- ROAMING_AIRTIME --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;8&quot;/&gt; &lt;!-- ROAMING_LONG_DISTANCE --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PoolingCoverageType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\p{Lu}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;BillState&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;B&quot;/&gt; &lt;!-- Billed --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;U&quot;/&gt; &lt;!-- Unbilled --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;A&quot;/&gt; &lt;!-- All --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;Amount&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\-{0,1}\d{1,}\.\d{2}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ProvinceCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AB&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;BC&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;MB&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NB&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NF&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NS&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ON&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;PE&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;PQ&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;SK&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;YT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NU&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;DealerCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SalesRepCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{3}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PricePlanCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ServiceCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;FeatureCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,6}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;Language&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;EN&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;FR&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CA&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;MA&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;InvoiceStatus&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;C&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;O&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ReasonCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,6}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ActivityCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,4}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;OperatorId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{1,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CreditClass&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[A-Z]&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;AddressType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;C&quot;/&gt; &lt;!-- City --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;D&quot;/&gt; &lt;!-- Rural --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;F&quot;/&gt; &lt;!-- Foreign --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PostalCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[A-Z]\d[A-Z]\d[A-Z]\d&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;NameFormat&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;P&quot;/&gt; &lt;!-- Private --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;D&quot;/&gt; &lt;!-- Business --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SOC&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;Month&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:minInclusive value=&quot;1&quot;/&gt;&#xd;
+			&lt;xs:maxInclusive value=&quot;12&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;MonthDay&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:minInclusive value=&quot;1&quot;/&gt;&#xd;
+			&lt;xs:maxInclusive value=&quot;31&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;MemoType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,4}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;MemoTypeCategory&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,4}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;NumberLocation&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\p{Lu}{3}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;NetworkID&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{0,3}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;NpaNXX&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{6}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CoverageType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;EXTENDED&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;LOCAL&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;US&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;WIDE&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CategoryCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,6}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ServiceType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\p{Lu}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;WPSServiceType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;TRACKING&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;PROMOTIONAL&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;EquipmentType&quot;&gt;&#xd;
+  	&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\p{Lu}|\p{Nd}&quot;/&gt;&#xd;
+    &lt;/xs:restriction&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CorporateId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;TaxExemptCertNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{15}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;AccountPassword&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S{4,20}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;DeliveryDate&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:date&quot;&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SMSNotificationPriority&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;1&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;2&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+  &#xd;
+  &lt;xs:simpleType name=&quot;SMSNotificationTypeCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;1&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;2&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;3&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;4&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;5&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;17&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ApplicationName&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PaymentType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:enumeration value=&quot;B&quot;/&gt; &lt;!-- Bill --&gt;&#xd;
+      &lt;xs:enumeration value=&quot;D&quot;/&gt; &lt;!-- Deposit --&gt;&#xd;
+    &lt;/xs:restriction&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+  &#xd;
+  &lt;xs:simpleType name=&quot;ActivationOptionNameType&quot;&gt;&#xd;
+	&lt;xs:annotation&gt;&#xd;
+		&lt;xs:documentation&gt;Enum mastered from CreditProfileService (HCD) system.&lt;/xs:documentation&gt;&#xd;
+	&lt;/xs:annotation&gt;&#xd;
+	&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+		&lt;xs:enumeration value=&quot;Deposit&quot;/&gt;&#xd;
+		&lt;xs:enumeration value=&quot;CreditLimit&quot;/&gt;&#xd;
+		&lt;xs:enumeration value=&quot;CreditLimitAndDeposit&quot;/&gt;&#xd;
+		&lt;xs:enumeration value=&quot;DifferentiatedCredit&quot;/&gt;&#xd;
+	&lt;/xs:restriction&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+  &#xd;
+  &lt;xs:simpleType name=&quot;DriversLicense&quot;&gt;&#xd;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SocialInsuranceNumber&quot;&gt;&#xd;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\d{9}&quot;/&gt;&#xd;
+    &lt;/xs:restriction&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;!-- complex types --&gt;&#xd;
+	&lt;xs:complexType name=&quot;Address&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;addressType&quot; type=&quot;AddressType&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;attention&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;primaryLine&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;secondaryLine&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;city&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;province&quot; nillable=&quot;true&quot; type=&quot;ProvinceCode&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;postalCode&quot; nillable=&quot;true&quot; type=&quot;PostalCode&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;country&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;civicNo&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;civicNoSuffix&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetNumber&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetNumberSuffix&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetDirection&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetName&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetType&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;unitType&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;unit&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;poBox&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralLocation&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralQualifier&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralSite&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralCompartment&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralDeliveryType&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralGroup&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralNumber&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralType&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;zipGeoCode&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;foreignState&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	  &lt;xs:complexType name=&quot;ValidationMessage&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;message&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;severity&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;AddressValidationResult&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;Address&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+					&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;validationMessages&quot; type=&quot;ValidationMessage&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countValidationMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countInformationalMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countWarningMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countErrorMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countDBErrorMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countDBWarningMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countOtherMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+				&lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;ConsumerName&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;title&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;firstName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;middleInitial&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;lastName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;generation&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;additionalLine&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;nameFormat&quot; type=&quot;NameFormat&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;CreditCard&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;expiryMonth&quot; type=&quot;Month&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;expiryYear&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;holderName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;authorizationCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;PersonalCreditInformation&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;creditCard&quot; nillable=&quot;true&quot; type=&quot;CreditCard&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;birthDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;sin&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;driversLicense&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;driversLicenseExpiry&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;driversLicenseProvince&quot; nillable=&quot;true&quot; type=&quot;ProvinceCode&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;BusinessCreditInformation&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;incorporationNumber&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;incorporationDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;BankAccount&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;bankCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankAccountNumber&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankBranchNumber&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankAccountHolder&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankAccountType&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;Cheque&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankAccount&quot; type=&quot;BankAccount&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;PaymentMethod&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;paymentMethod&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;creditCard&quot; nillable=&quot;true&quot; type=&quot;CreditCard&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;cheque&quot; nillable=&quot;true&quot; type=&quot;Cheque&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;status&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;statusReason&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;startDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;endDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;suppressReturnEnvelope&quot; nillable=&quot;true&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;FinancialHistory&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;debtSummary&quot; type=&quot;DebtSummary&quot;/&gt;&#xd;
+			&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;monthlyFinancialActivities&quot; nillable=&quot;true&quot; type=&quot;MonthlyFinancialActivity&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;delinquent&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;writtenOff&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;lastPaymentAmount&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;lastPaymentDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;DebtSummary&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;currentDue&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDue&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDue1to30Days&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDue31to60Days&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDue61to90Days&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDueOver90Days&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;billDueDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;MonthlyFinancialActivity&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;activity&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;year&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;month&quot; type=&quot;Month&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;dishonoredPaymentCount&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;CreditCheckResult&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;creditClass&quot; type=&quot;CreditClass&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;limit&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;deposits&quot; nillable=&quot;true&quot; type=&quot;CreditCheckResultDeposit&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;message&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      		&lt;xs:element name=&quot;messageFrench&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;creditScore&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;referToCreditAnalyst&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;CreditCheckResultDeposit&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;productType&quot; type=&quot;ProductType&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;depositAmount&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;EligibilityResultType&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;message&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;messageFrench&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;serviceDeclined&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;referToCreditAnalyst&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;xs:element minOccurs=&quot;0&quot; name=&quot;referralReason&quot; type=&quot;ReferralReasonType&quot;/&gt;&#xd;
+		&lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;activationOption&quot; type=&quot;ActivationOptionType&quot;/&gt;&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+	&#xd;
+  &lt;xs:complexType name=&quot;ReferralReasonType&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;message&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;messageFrench&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+  &#xd;
+  &lt;xs:complexType name=&quot;ActivationOptionType&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;optionName&quot; type=&quot;ActivationOptionNameType&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;creditClass&quot; type=&quot;CreditClass&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;creditLimit&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;deposit&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;maxContractTerm&quot; type=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:annotation&gt;&#xd;
+				&lt;xs:documentation&gt;Maximum contract term length allowed (in months).&lt;/xs:documentation&gt;&#xd;
+			&lt;/xs:annotation&gt;&#xd;
+		&lt;/xs:element&gt;		&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+  &#xd;
+  &lt;xs:complexType name=&quot;CodeMessage&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;message&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+  &#xd;
+  &lt;xs:complexType name=&quot;PortConsumerNameInfo&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;title&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;firstName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;middleInitial&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;lastName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;generation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;additionalLine&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;nameFormat&quot;&gt;&#xd;
+				&lt;xs:simpleType&gt;&#xd;
+					&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+						&lt;xs:length value=&quot;1&quot;/&gt;&#xd;
+					&lt;/xs:restriction&gt;&#xd;
+				&lt;/xs:simpleType&gt;&#xd;
+			&lt;/xs:element&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;FleetIdentity&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fleetId&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;urbanId&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;MemberIdentity&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fleetIdentity&quot; type=&quot;FleetIdentity&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;memberId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;resourceStatus&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;Commitment&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;reasonCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;months&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;startDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;endDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;SubscriptionRole&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;dealerCode&quot; type=&quot;DealerCode&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;salesRepCode&quot; type=&quot;SalesRepCode&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;csrId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;modified&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;BillingAccountAssociation&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; name=&quot;billingAccountAssociationId&quot; nillable=&quot;true&quot; type=&quot;xs:long&quot;/&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;masterAccountSystemCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;masterAccountId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;associatedAccountSystemCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;associatedAccountId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;billingAccountAssociationType&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+        &lt;xs:element maxOccurs=&quot;1&quot; name=&quot;startDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			  &lt;xs:element maxOccurs=&quot;1&quot; name=&quot;endDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;Memo&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;ban&quot; type=&quot;AccountNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;memoType&quot; type=&quot;MemoType&quot;/&gt;&#xd;
+		    &lt;xs:element name=&quot;subscriberId&quot; nillable=&quot;true&quot; type=&quot;SubscriberNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;productType&quot; type=&quot;ProductType&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;text&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;date&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;systemText&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;modifyDate&quot; nillable=&quot;true&quot; type=&quot;xs:dateTime&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;operatorId&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;memoId&quot; nillable=&quot;true&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;FollowUpText&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+	    	&lt;xs:element name=&quot;text&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;operatorId&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;creationDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;FollowUp&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;ban&quot; type=&quot;AccountNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;followUpId&quot; nillable=&quot;true&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;type&quot; type=&quot;MemoType&quot;/&gt;&#xd;
+		    &lt;xs:element name=&quot;subscriberId&quot; nillable=&quot;true&quot; type=&quot;SubscriberNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;dueDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;phoneNumber&quot; nillable=&quot;true&quot; type=&quot;PhoneNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;productType&quot; type=&quot;ProductType&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;text&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element default=&quot;false&quot; name=&quot;considerBanStamp&quot; nillable=&quot;true&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;status&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;openDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;closeDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;operatorId&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;openedBy&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;closedBy&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;assignedToWorkPositionId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;closeReasonCode&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;additionalTextList&quot; nillable=&quot;true&quot; type=&quot;FollowUpText&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+  &#xd;
+	&lt;xs:simpleType name=&quot;emailType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:maxLength value=&quot;80&quot;/&gt;&#xd;
+			&lt;xs:pattern value=&quot;([\.a-zA-Z0-9_\-])+@([a-zA-Z0-9_\-])+(([a-zA-Z0-9_\-])*\.([a-zA-Z0-9_\-])+)+&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;URN&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element minOccurs=&quot;1&quot; name=&quot;urn&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:simpleType name=&quot;BusinessRole&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AGENT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AGENTACTV&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;DEALER&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;DEALERACTV&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CLIENT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CLIENTACTV&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;IVRCLIENT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CORPORATE&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CORPRTSTR&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;RETAILSTR&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CNTRENEWAL&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CNTRNCORP&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AGENTLNR&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ALL&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+	&lt;xs:simpleType name=&quot;Privilege&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;DISPLAY&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ACTIVATEAGENTACTV&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ADD&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;REMOVE&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;RTNONCHNG&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;RTNONRENEW&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AUTOADD&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ADDAOM&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+		&#xd;
+&lt;/xs:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns=&quot;http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0&quot; xmlns:common=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0&quot;&gt;&#xd;
+&#xd;
+	&lt;xs:import namespace=&quot;http://schemas.telus.com/eca/common_types_2_1&quot;/&gt;&#xd;
+&#xd;
+	&lt;xs:complexType abstract=&quot;true&quot; name=&quot;Reference&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;description&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;descriptionFrench&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;AccountType&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;Reference&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+					&lt;xs:element name=&quot;accountTypeCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;accountSubTypeCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;defaultDealer&quot; nillable=&quot;true&quot; type=&quot;common:DealerCode&quot;/&gt;&#xd;
+&#xd;
+					&lt;xs:element name=&quot;defaultSalesRepCode&quot; nillable=&quot;true&quot; type=&quot;common:SalesRepCode&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCreditCheckRequired&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;minimumSubscribersForFleet&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;billingNameFormat&quot; type=&quot;common:NameFormat&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;brandId&quot; nillable=&quot;true&quot; type=&quot;common:BrandId&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isDuplicateBANCheck&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBusinessRegular&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBusinessPersonal&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBusinessDealer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidOfficial&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBusinessOfficial&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidEmployee&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidCorporatePersonal&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isAutotel&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporate&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporateIDEN&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporatePCS&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporatePrivateNetworkPlus&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporateRegional&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporateRegular&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isIDEN&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPager&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPCS&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPCSPostpaidCorporateRegularAccount&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaid&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBoxedConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidCorporateRegular&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPrepaidConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isQuebectelPrepaidConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isWesternPrepaidConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+				&lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;MemoType&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;Reference&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+					&lt;xs:element name=&quot;category&quot; type=&quot;common:MemoTypeCategory&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;systemText&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;systemTextFrench&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;numberOfParameters&quot; nillable=&quot;true&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;manualInd&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&#xd;
+				&lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;Segmentation&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;Reference&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+&#xd;
+					&lt;xs:element name=&quot;segment&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;subSegment&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+	&#xd;
+&lt;/xs:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; targetNamespace=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot;&gt;&#xd;
+         &lt;xsd:import namespace=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot;/&gt;&#xd;
+         &#xd;
+         &lt;xsd:import namespace=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot;/&gt;&#xd;
+      &lt;/xsd:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:exc=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot;&gt;&#xd;
+	&lt;xsd:element name=&quot;ServiceException&quot; type=&quot;exc:ServiceException&quot;&gt;&#xd;
+		&lt;xsd:annotation&gt;&#xd;
+			&lt;xsd:documentation&gt;Service exception fault when downstream services are not available.&lt;/xsd:documentation&gt;&#xd;
+		&lt;/xsd:annotation&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:complexType name=&quot;ServiceException&quot;&gt;&#xd;
+		&lt;xsd:sequence&gt;&#xd;
+			&lt;xsd:element name=&quot;messageId&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element name=&quot;errorCode&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element name=&quot;errorMessage&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element maxOccurs=&quot;100&quot; minOccurs=&quot;0&quot; name=&quot;variables&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+		&lt;/xsd:sequence&gt;&#xd;
+	&lt;/xsd:complexType&gt;&#xd;
+	&lt;xsd:element name=&quot;PolicyException&quot; type=&quot;exc:PolicyException&quot;&gt;&#xd;
+		&lt;xsd:annotation&gt;&#xd;
+			&lt;xsd:documentation&gt;Policy Exception fault raised for business exceptions.&lt;/xsd:documentation&gt;&#xd;
+		&lt;/xsd:annotation&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:complexType name=&quot;PolicyException&quot;&gt;&#xd;
+		&lt;xsd:sequence&gt;&#xd;
+			&lt;xsd:element name=&quot;messageId&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element name=&quot;errorCode&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element name=&quot;errorMessage&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element maxOccurs=&quot;100&quot; minOccurs=&quot;0&quot; name=&quot;variables&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+		&lt;/xsd:sequence&gt;&#xd;
+	&lt;/xsd:complexType&gt;&#xd;
+&lt;/xsd:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; version=&quot;1.0&quot;&gt;&#xd;
+	&lt;xs:element name=&quot;pingResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element minOccurs=&quot;0&quot; name=&quot;version&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&lt;xs:element name=&quot;ping&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence/&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns=&quot;http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0&quot; xmlns:common=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:typ=&quot;http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0&quot;&gt;&#xd;
+&#xd;
+   &lt;xs:import namespace=&quot;http://schemas.telus.com/eca/common_types_2_1&quot;/&gt;&#xd;
+&#xd;
+	&lt;xs:import namespace=&quot;http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0&quot;/&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;NumberGroup&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;typ:Reference&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+&#xd;
+					&lt;xs:element name=&quot;provinceCode&quot; type=&quot;common:ProvinceCode&quot;/&gt;&#xd;
+					&lt;xs:element maxOccurs=&quot;1000&quot; name=&quot;npaNXX&quot; nillable=&quot;true&quot; type=&quot;common:NpaNXX&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;networkId&quot; nillable=&quot;true&quot; type=&quot;common:NetworkID&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;numberLocation&quot; type=&quot;common:NumberLocation&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;defaultDealerCode&quot; nillable=&quot;true&quot; type=&quot;common:DealerCode&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;defaultSalesRepCode&quot; nillable=&quot;true&quot; type=&quot;common:SalesRepCode&quot;/&gt;&#xd;
+				&lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:simpleType name=&quot;AccountTypeCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;B&quot;/&gt; &lt;!-- Business --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;I&quot;/&gt; &lt;!-- Consumer --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;C&quot;/&gt; &lt;!-- Corporate --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;AccountSubTypeCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;(\p{Lu}|\d{1})&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+	&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding>windows-1252</encoding>
+          <baseUri>http://ln99160.corp.ads:10000/rest/services/uddi:e0318b66-1824-11e4-b9fb-daeab9294710/wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix>
+            <entry>
+              <string>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getAvailableNumberGroupsResponse</id>
+        <displayName>getAvailableNumberGroupsResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:numberGroup</name>
+            <model class="org.mule.common.metadata.DefaultListMetaDataModel">
+              <dataType>LIST</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</namespaceURI>
+                      <localPart>NumberGroup</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                  <org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                    <maxOccurs>1000</maxOccurs>
+                    <minOccurs>0</minOccurs>
+                  </org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                <dataType>XML</dataType>
+                <metaDataModelPropertiesManager>
+                  <properties/>
+                </metaDataModelPropertiesManager>
+                <fields>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns1:code</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField[5]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0</namespaceURI>
+                            <localPart>code</localPart>
+                            <prefix>ns1</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns1:description</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField[5]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0</namespaceURI>
+                            <localPart>description</localPart>
+                            <prefix>ns1</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns1:descriptionFrench</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField[5]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0</namespaceURI>
+                            <localPart>descriptionFrench</localPart>
+                            <prefix>ns1</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns2:provinceCode</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName>
+                              <namespaceURI>http://schemas.telus.com/eca/common_types_2_1</namespaceURI>
+                              <localPart>ProvinceCode</localPart>
+                              <prefix></prefix>
+                            </typeQName>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</namespaceURI>
+                            <localPart>provinceCode</localPart>
+                            <prefix>ns2</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns2:npaNXX</name>
+                    <model class="org.mule.common.metadata.DefaultListMetaDataModel">
+                      <dataType>LIST</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                            <maxOccurs>1000</maxOccurs>
+                            <minOccurs>1</minOccurs>
+                          </org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName>
+                              <namespaceURI>http://schemas.telus.com/eca/common_types_2_1</namespaceURI>
+                              <localPart>NpaNXX</localPart>
+                              <prefix></prefix>
+                            </typeQName>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                      <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                        <dataType>STRING</dataType>
+                        <metaDataModelPropertiesManager>
+                          <properties/>
+                        </metaDataModelPropertiesManager>
+                      </model>
+                      <isArray>false</isArray>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</namespaceURI>
+                            <localPart>npaNXX</localPart>
+                            <prefix>ns2</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns2:networkId</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>INTEGER</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName>
+                              <namespaceURI>http://schemas.telus.com/eca/common_types_2_1</namespaceURI>
+                              <localPart>NetworkID</localPart>
+                              <prefix></prefix>
+                            </typeQName>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</namespaceURI>
+                            <localPart>networkId</localPart>
+                            <prefix>ns2</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns2:numberLocation</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName>
+                              <namespaceURI>http://schemas.telus.com/eca/common_types_2_1</namespaceURI>
+                              <localPart>NumberLocation</localPart>
+                              <prefix></prefix>
+                            </typeQName>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</namespaceURI>
+                            <localPart>numberLocation</localPart>
+                            <prefix>ns2</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns2:defaultDealerCode</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName>
+                              <namespaceURI>http://schemas.telus.com/eca/common_types_2_1</namespaceURI>
+                              <localPart>DealerCode</localPart>
+                              <prefix></prefix>
+                            </typeQName>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</namespaceURI>
+                            <localPart>defaultDealerCode</localPart>
+                            <prefix>ns2</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns2:defaultSalesRepCode</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName>
+                              <namespaceURI>http://schemas.telus.com/eca/common_types_2_1</namespaceURI>
+                              <localPart>SalesRepCode</localPart>
+                              <prefix></prefix>
+                            </typeQName>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</namespaceURI>
+                            <localPart>defaultSalesRepCode</localPart>
+                            <prefix>ns2</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                </fields>
+                <rootElement>
+                  <namespaceURI>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</namespaceURI>
+                  <localPart>getAvailableNumberGroupsResponse</localPart>
+                  <prefix>ns0</prefix>
+                </rootElement>
+                <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                  <schemas>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:common=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ns1=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ref=&quot;http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot;&gt;&#xd;
+	&lt;xsd:import namespace=&quot;http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0&quot;/&gt;&#xd;
+	&lt;xsd:import namespace=&quot;http://schemas.telus.com/eca/common_types_2_1&quot;/&gt;&#xd;
+	&lt;xsd:element name=&quot;getNumberGroupByPhoneNumberAndProductType&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;phoneNumber&quot; type=&quot;common:PhoneNumber&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;productType&quot; type=&quot;common:ProductType&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getNumberGroupByPhoneNumberAndProductTypeResponse&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;numberGroup&quot; nillable=&quot;true&quot; type=&quot;ref:NumberGroup&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getNumberGroupByPortedInPhoneNumberProductType&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;phoneNumber&quot; type=&quot;common:PhoneNumber&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;productType&quot; type=&quot;common:ProductType&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getNumberGroupByPortedInPhoneNumberProductTypeResponse&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;numberGroup&quot; nillable=&quot;true&quot; type=&quot;ref:NumberGroup&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getAvailableNumberGroups&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element name=&quot;accountType&quot; type=&quot;ref:AccountTypeCode&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;accountSubType&quot; type=&quot;ref:AccountSubTypeCode&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;productType&quot; type=&quot;common:ProductType&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;equipmentType&quot; type=&quot;common:EquipmentType&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;marketAreaCode&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getAvailableNumberGroupsResponse&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element maxOccurs=&quot;1000&quot; minOccurs=&quot;0&quot; name=&quot;numberGroup&quot; type=&quot;ref:NumberGroup&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getAvailablePhoneNumberList&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:annotation&gt;&#xd;
+					&lt;xsd:documentation&gt;This operation Retrieves phone numbers available for assignment in the system governed by the PhoneNumberReservation search criteria&lt;/xsd:documentation&gt;&#xd;
+				&lt;/xsd:annotation&gt;&#xd;
+				&lt;xsd:element name=&quot;accountNumber&quot; type=&quot;common:AccountNumber&quot;/&gt;&#xd;
+				&lt;xsd:element minOccurs=&quot;0&quot; name=&quot;subscriberId&quot; type=&quot;common:SubscriberNumber&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;numberGroup&quot; type=&quot;ref:NumberGroup&quot;/&gt;&#xd;
+				&lt;xsd:element name=&quot;productType&quot; type=&quot;common:ProductType&quot;&gt;&#xd;
+					&lt;xsd:annotation&gt;&#xd;
+						&lt;xsd:documentation&gt;C - PRODUCT_TYPE_PCS;&#xd;
+P- PRODUCT_TYPE_PAGER&#xd;
+I - PRODUCT_TYPE_IDEN&lt;/xsd:documentation&gt;&#xd;
+					&lt;/xsd:annotation&gt;&#xd;
+				&lt;/xsd:element&gt;&#xd;
+				&lt;xsd:element minOccurs=&quot;0&quot; name=&quot;phoneNumberPattern&quot; type=&quot;xsd:string&quot;&gt;&#xd;
+					&lt;xsd:annotation&gt;&#xd;
+						&lt;xsd:documentation&gt;Phone number search pattern.  For &apos;Like Matches&apos;  this should be the 10 digit phone number of an existing subscriber.  Otherwise,  it should be 10 digit combination of numbers and asterixes (*), where asterisk  means any number.  If &apos;phoneNumberPattern&apos; contains less than 10 characters, it will be padded with asterixes.&lt;/xsd:documentation&gt;&#xd;
+					&lt;/xsd:annotation&gt;&#xd;
+				&lt;/xsd:element&gt;&#xd;
+				&lt;xsd:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;asianFriendlyInd&quot; type=&quot;xsd:boolean&quot;&gt;&#xd;
+					&lt;xsd:annotation&gt;&#xd;
+						&lt;xsd:documentation&gt;isAsian indicator. true/false(default). &lt;/xsd:documentation&gt;&#xd;
+					&lt;/xsd:annotation&gt;&#xd;
+				&lt;/xsd:element&gt;&#xd;
+				&lt;xsd:element name=&quot;maxNumber&quot; type=&quot;xsd:double&quot;&gt;&#xd;
+					&lt;xsd:annotation&gt;&#xd;
+						&lt;xsd:documentation&gt;maxinum numbers to be retrieved. &lt;/xsd:documentation&gt;&#xd;
+					&lt;/xsd:annotation&gt;&#xd;
+				&lt;/xsd:element&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:element name=&quot;getAvailablePhoneNumberListResponse&quot;&gt;&#xd;
+		&lt;xsd:complexType&gt;&#xd;
+			&lt;xsd:sequence&gt;&#xd;
+				&lt;xsd:element maxOccurs=&quot;1000&quot; name=&quot;phoneNumberList&quot; type=&quot;common:PhoneNumber&quot;/&gt;&#xd;
+			&lt;/xsd:sequence&gt;&#xd;
+		&lt;/xsd:complexType&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+&lt;/xsd:schema&gt;</string>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://schemas.telus.com/eca/common_types_2_1&quot;&gt;&#xd;
+&#xd;
+  &lt;!-- simple types --&gt;&#xd;
+	&lt;xs:simpleType name=&quot;AccountNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,8}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CustomerId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,8}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SubscriberNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{0,19}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;BrandId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,21}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CreditScenario&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\p{Lu}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;OtherPhoneType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;FAX&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;PAGER&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CVMS&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;MOBILE&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PhoneNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PhoneNumberExtension&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{0,4}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;BillCycle&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,1}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SerialNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{1,20}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ProductType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\p{Lu}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PoolingGroupId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;1&quot;/&gt; &lt;!-- AIRTIME --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;2&quot;/&gt; &lt;!-- DIRECT_CONNECT --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;3&quot;/&gt; &lt;!-- AIRTIME_AND_DIRECT_CONNECT --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;4&quot;/&gt; &lt;!-- LONG_DISTANCE --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;5&quot;/&gt; &lt;!-- DIRECT_CONNECT_LD --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;6&quot;/&gt; &lt;!-- LONG_DISTANCE_AND_DIRECT_CONNECT_LD --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;7&quot;/&gt; &lt;!-- ROAMING_AIRTIME --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;8&quot;/&gt; &lt;!-- ROAMING_LONG_DISTANCE --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PoolingCoverageType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\p{Lu}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;BillState&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;B&quot;/&gt; &lt;!-- Billed --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;U&quot;/&gt; &lt;!-- Unbilled --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;A&quot;/&gt; &lt;!-- All --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;Amount&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\-{0,1}\d{1,}\.\d{2}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ProvinceCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AB&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;BC&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;MB&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NB&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NF&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NS&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ON&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;PE&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;PQ&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;SK&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;YT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;NU&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;DealerCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SalesRepCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{3}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PricePlanCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ServiceCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;FeatureCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,6}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;Language&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;EN&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;FR&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CA&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;MA&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;InvoiceStatus&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;C&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;O&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ReasonCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,6}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ActivityCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,4}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;OperatorId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{1,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CreditClass&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[A-Z]&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;AddressType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;C&quot;/&gt; &lt;!-- City --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;D&quot;/&gt; &lt;!-- Rural --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;F&quot;/&gt; &lt;!-- Foreign --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PostalCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[A-Z]\d[A-Z]\d[A-Z]\d&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;NameFormat&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;P&quot;/&gt; &lt;!-- Private --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;D&quot;/&gt; &lt;!-- Business --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SOC&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;Month&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:minInclusive value=&quot;1&quot;/&gt;&#xd;
+			&lt;xs:maxInclusive value=&quot;12&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;MonthDay&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:minInclusive value=&quot;1&quot;/&gt;&#xd;
+			&lt;xs:maxInclusive value=&quot;31&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;MemoType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,4}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;MemoTypeCategory&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,4}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;NumberLocation&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\p{Lu}{3}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;NetworkID&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{0,3}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;NpaNXX&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\d{6}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CoverageType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;EXTENDED&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;LOCAL&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;US&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;WIDE&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CategoryCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{1,6}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ServiceType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\p{Lu}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;WPSServiceType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;TRACKING&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;PROMOTIONAL&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;EquipmentType&quot;&gt;&#xd;
+  	&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\p{Lu}|\p{Nd}&quot;/&gt;&#xd;
+    &lt;/xs:restriction&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;CorporateId&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;[1-9]{1}\d{0,9}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;TaxExemptCertNumber&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S.{15}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;AccountPassword&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;\S{4,20}&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;DeliveryDate&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:date&quot;&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SMSNotificationPriority&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;1&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;2&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+  &#xd;
+  &lt;xs:simpleType name=&quot;SMSNotificationTypeCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;1&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;2&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;3&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;4&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;5&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;17&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;ApplicationName&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;PaymentType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:enumeration value=&quot;B&quot;/&gt; &lt;!-- Bill --&gt;&#xd;
+      &lt;xs:enumeration value=&quot;D&quot;/&gt; &lt;!-- Deposit --&gt;&#xd;
+    &lt;/xs:restriction&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+  &#xd;
+  &lt;xs:simpleType name=&quot;ActivationOptionNameType&quot;&gt;&#xd;
+	&lt;xs:annotation&gt;&#xd;
+		&lt;xs:documentation&gt;Enum mastered from CreditProfileService (HCD) system.&lt;/xs:documentation&gt;&#xd;
+	&lt;/xs:annotation&gt;&#xd;
+	&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+		&lt;xs:enumeration value=&quot;Deposit&quot;/&gt;&#xd;
+		&lt;xs:enumeration value=&quot;CreditLimit&quot;/&gt;&#xd;
+		&lt;xs:enumeration value=&quot;CreditLimitAndDeposit&quot;/&gt;&#xd;
+		&lt;xs:enumeration value=&quot;DifferentiatedCredit&quot;/&gt;&#xd;
+	&lt;/xs:restriction&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+  &#xd;
+  &lt;xs:simpleType name=&quot;DriversLicense&quot;&gt;&#xd;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;SocialInsuranceNumber&quot;&gt;&#xd;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+      &lt;xs:pattern value=&quot;\d{9}&quot;/&gt;&#xd;
+    &lt;/xs:restriction&gt;&#xd;
+  &lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;!-- complex types --&gt;&#xd;
+	&lt;xs:complexType name=&quot;Address&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;addressType&quot; type=&quot;AddressType&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;attention&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;primaryLine&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;secondaryLine&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;city&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;province&quot; nillable=&quot;true&quot; type=&quot;ProvinceCode&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;postalCode&quot; nillable=&quot;true&quot; type=&quot;PostalCode&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;country&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;civicNo&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;civicNoSuffix&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetNumber&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetNumberSuffix&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetDirection&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetName&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;streetType&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;unitType&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;unit&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;poBox&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralLocation&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralQualifier&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralSite&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralCompartment&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralDeliveryType&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralGroup&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralNumber&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;ruralType&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;zipGeoCode&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;foreignState&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	  &lt;xs:complexType name=&quot;ValidationMessage&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;message&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;severity&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;AddressValidationResult&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;Address&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+					&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;validationMessages&quot; type=&quot;ValidationMessage&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countValidationMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countInformationalMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countWarningMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countErrorMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countDBErrorMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countDBWarningMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;countOtherMessages&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+				&lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;ConsumerName&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;title&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;firstName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;middleInitial&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;lastName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;generation&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;additionalLine&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;nameFormat&quot; type=&quot;NameFormat&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;CreditCard&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;expiryMonth&quot; type=&quot;Month&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;expiryYear&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;holderName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;authorizationCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;PersonalCreditInformation&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;creditCard&quot; nillable=&quot;true&quot; type=&quot;CreditCard&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;birthDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;sin&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;driversLicense&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;driversLicenseExpiry&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;driversLicenseProvince&quot; nillable=&quot;true&quot; type=&quot;ProvinceCode&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;BusinessCreditInformation&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;incorporationNumber&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;incorporationDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;BankAccount&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;bankCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankAccountNumber&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankBranchNumber&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankAccountHolder&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankAccountType&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;Cheque&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;bankAccount&quot; type=&quot;BankAccount&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;PaymentMethod&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;paymentMethod&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;creditCard&quot; nillable=&quot;true&quot; type=&quot;CreditCard&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;cheque&quot; nillable=&quot;true&quot; type=&quot;Cheque&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;status&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;statusReason&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;startDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;endDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;suppressReturnEnvelope&quot; nillable=&quot;true&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;FinancialHistory&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;debtSummary&quot; type=&quot;DebtSummary&quot;/&gt;&#xd;
+			&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;monthlyFinancialActivities&quot; nillable=&quot;true&quot; type=&quot;MonthlyFinancialActivity&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;delinquent&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;writtenOff&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;lastPaymentAmount&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;lastPaymentDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;DebtSummary&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;currentDue&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDue&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDue1to30Days&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDue31to60Days&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDue61to90Days&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;pastDueOver90Days&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;billDueDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;MonthlyFinancialActivity&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;activity&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;year&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;month&quot; type=&quot;Month&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;dishonoredPaymentCount&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;CreditCheckResult&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;creditClass&quot; type=&quot;CreditClass&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;limit&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+			&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;deposits&quot; nillable=&quot;true&quot; type=&quot;CreditCheckResultDeposit&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;message&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      		&lt;xs:element name=&quot;messageFrench&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;creditScore&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;referToCreditAnalyst&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;CreditCheckResultDeposit&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;productType&quot; type=&quot;ProductType&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;depositAmount&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;EligibilityResultType&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;message&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;messageFrench&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;serviceDeclined&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;referToCreditAnalyst&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;xs:element minOccurs=&quot;0&quot; name=&quot;referralReason&quot; type=&quot;ReferralReasonType&quot;/&gt;&#xd;
+		&lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;activationOption&quot; type=&quot;ActivationOptionType&quot;/&gt;&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+	&#xd;
+  &lt;xs:complexType name=&quot;ReferralReasonType&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;message&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;messageFrench&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+  &#xd;
+  &lt;xs:complexType name=&quot;ActivationOptionType&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;optionName&quot; type=&quot;ActivationOptionNameType&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;creditClass&quot; type=&quot;CreditClass&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;creditLimit&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;deposit&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;maxContractTerm&quot; type=&quot;xs:int&quot;&gt;&#xd;
+			&lt;xs:annotation&gt;&#xd;
+				&lt;xs:documentation&gt;Maximum contract term length allowed (in months).&lt;/xs:documentation&gt;&#xd;
+			&lt;/xs:annotation&gt;&#xd;
+		&lt;/xs:element&gt;		&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+  &#xd;
+  &lt;xs:complexType name=&quot;CodeMessage&quot;&gt;&#xd;
+	&lt;xs:sequence&gt;&#xd;
+		&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;xs:element name=&quot;message&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+  &#xd;
+  &lt;xs:complexType name=&quot;PortConsumerNameInfo&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;title&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;firstName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;middleInitial&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;lastName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;generation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;additionalLine&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;nameFormat&quot;&gt;&#xd;
+				&lt;xs:simpleType&gt;&#xd;
+					&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+						&lt;xs:length value=&quot;1&quot;/&gt;&#xd;
+					&lt;/xs:restriction&gt;&#xd;
+				&lt;/xs:simpleType&gt;&#xd;
+			&lt;/xs:element&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;FleetIdentity&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fleetId&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;urbanId&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;MemberIdentity&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fleetIdentity&quot; type=&quot;FleetIdentity&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;memberId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;resourceStatus&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;Commitment&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;reasonCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;months&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;startDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;endDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;SubscriptionRole&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;dealerCode&quot; type=&quot;DealerCode&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;salesRepCode&quot; type=&quot;SalesRepCode&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;csrId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;modified&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;BillingAccountAssociation&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; name=&quot;billingAccountAssociationId&quot; nillable=&quot;true&quot; type=&quot;xs:long&quot;/&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;masterAccountSystemCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;masterAccountId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;associatedAccountSystemCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;associatedAccountId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;billingAccountAssociationType&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+        &lt;xs:element maxOccurs=&quot;1&quot; name=&quot;startDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+			  &lt;xs:element maxOccurs=&quot;1&quot; name=&quot;endDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;Memo&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;ban&quot; type=&quot;AccountNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;memoType&quot; type=&quot;MemoType&quot;/&gt;&#xd;
+		    &lt;xs:element name=&quot;subscriberId&quot; nillable=&quot;true&quot; type=&quot;SubscriberNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;productType&quot; type=&quot;ProductType&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;text&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;date&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;systemText&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;modifyDate&quot; nillable=&quot;true&quot; type=&quot;xs:dateTime&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;operatorId&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;memoId&quot; nillable=&quot;true&quot; type=&quot;xs:double&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;FollowUpText&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+	    	&lt;xs:element name=&quot;text&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;operatorId&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;creationDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;FollowUp&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;ban&quot; type=&quot;AccountNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;followUpId&quot; nillable=&quot;true&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+		    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;type&quot; type=&quot;MemoType&quot;/&gt;&#xd;
+		    &lt;xs:element name=&quot;subscriberId&quot; nillable=&quot;true&quot; type=&quot;SubscriberNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;dueDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;phoneNumber&quot; nillable=&quot;true&quot; type=&quot;PhoneNumber&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;productType&quot; type=&quot;ProductType&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;text&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element default=&quot;false&quot; name=&quot;considerBanStamp&quot; nillable=&quot;true&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;status&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;openDate&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;closeDate&quot; nillable=&quot;true&quot; type=&quot;xs:date&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;operatorId&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;openedBy&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;closedBy&quot; nillable=&quot;true&quot; type=&quot;OperatorId&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;assignedToWorkPositionId&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element name=&quot;closeReasonCode&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+	    	&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;additionalTextList&quot; nillable=&quot;true&quot; type=&quot;FollowUpText&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+  &#xd;
+	&lt;xs:simpleType name=&quot;emailType&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:maxLength value=&quot;80&quot;/&gt;&#xd;
+			&lt;xs:pattern value=&quot;([\.a-zA-Z0-9_\-])+@([a-zA-Z0-9_\-])+(([a-zA-Z0-9_\-])*\.([a-zA-Z0-9_\-])+)+&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;URN&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element minOccurs=&quot;1&quot; name=&quot;urn&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:simpleType name=&quot;BusinessRole&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AGENT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AGENTACTV&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;DEALER&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;DEALERACTV&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CLIENT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CLIENTACTV&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;IVRCLIENT&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CORPORATE&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CORPRTSTR&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;RETAILSTR&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CNTRENEWAL&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;CNTRNCORP&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AGENTLNR&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ALL&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+	&lt;xs:simpleType name=&quot;Privilege&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;DISPLAY&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ACTIVATEAGENTACTV&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ADD&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;REMOVE&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;RTNONCHNG&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;RTNONRENEW&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;AUTOADD&quot;/&gt;&#xd;
+			&lt;xs:enumeration value=&quot;ADDAOM&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+		&#xd;
+&lt;/xs:schema&gt;</string>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns=&quot;http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0&quot; xmlns:common=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0&quot;&gt;&#xd;
+&#xd;
+	&lt;xs:import namespace=&quot;http://schemas.telus.com/eca/common_types_2_1&quot;/&gt;&#xd;
+&#xd;
+	&lt;xs:complexType abstract=&quot;true&quot; name=&quot;Reference&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;description&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;descriptionFrench&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;AccountType&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;Reference&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+					&lt;xs:element name=&quot;accountTypeCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;accountSubTypeCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;defaultDealer&quot; nillable=&quot;true&quot; type=&quot;common:DealerCode&quot;/&gt;&#xd;
+&#xd;
+					&lt;xs:element name=&quot;defaultSalesRepCode&quot; nillable=&quot;true&quot; type=&quot;common:SalesRepCode&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCreditCheckRequired&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;minimumSubscribersForFleet&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;billingNameFormat&quot; type=&quot;common:NameFormat&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;brandId&quot; nillable=&quot;true&quot; type=&quot;common:BrandId&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isDuplicateBANCheck&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBusinessRegular&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBusinessPersonal&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBusinessDealer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidOfficial&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBusinessOfficial&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidEmployee&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidCorporatePersonal&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isAutotel&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporate&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporateIDEN&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporatePCS&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporatePrivateNetworkPlus&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporateRegional&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isCorporateRegular&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isIDEN&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPager&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPCS&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPCSPostpaidCorporateRegularAccount&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaid&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidBoxedConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPostpaidCorporateRegular&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isPrepaidConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isQuebectelPrepaidConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+					&lt;xs:element default=&quot;false&quot; name=&quot;isWesternPrepaidConsumer&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+				&lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;MemoType&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;Reference&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+					&lt;xs:element name=&quot;category&quot; type=&quot;common:MemoTypeCategory&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;systemText&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;systemTextFrench&quot; nillable=&quot;true&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;numberOfParameters&quot; nillable=&quot;true&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;manualInd&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+&#xd;
+				&lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;Segmentation&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;Reference&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+&#xd;
+					&lt;xs:element name=&quot;segment&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;subSegment&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+	&#xd;
+&lt;/xs:schema&gt;</string>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; targetNamespace=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot;&gt;&#xd;
+         &lt;xsd:import namespace=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot;/&gt;&#xd;
+         &#xd;
+         &lt;xsd:import namespace=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot;/&gt;&#xd;
+      &lt;/xsd:schema&gt;</string>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:exc=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot;&gt;&#xd;
+	&lt;xsd:element name=&quot;ServiceException&quot; type=&quot;exc:ServiceException&quot;&gt;&#xd;
+		&lt;xsd:annotation&gt;&#xd;
+			&lt;xsd:documentation&gt;Service exception fault when downstream services are not available.&lt;/xsd:documentation&gt;&#xd;
+		&lt;/xsd:annotation&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:complexType name=&quot;ServiceException&quot;&gt;&#xd;
+		&lt;xsd:sequence&gt;&#xd;
+			&lt;xsd:element name=&quot;messageId&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element name=&quot;errorCode&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element name=&quot;errorMessage&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element maxOccurs=&quot;100&quot; minOccurs=&quot;0&quot; name=&quot;variables&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+		&lt;/xsd:sequence&gt;&#xd;
+	&lt;/xsd:complexType&gt;&#xd;
+	&lt;xsd:element name=&quot;PolicyException&quot; type=&quot;exc:PolicyException&quot;&gt;&#xd;
+		&lt;xsd:annotation&gt;&#xd;
+			&lt;xsd:documentation&gt;Policy Exception fault raised for business exceptions.&lt;/xsd:documentation&gt;&#xd;
+		&lt;/xsd:annotation&gt;&#xd;
+	&lt;/xsd:element&gt;&#xd;
+	&lt;xsd:complexType name=&quot;PolicyException&quot;&gt;&#xd;
+		&lt;xsd:sequence&gt;&#xd;
+			&lt;xsd:element name=&quot;messageId&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element name=&quot;errorCode&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element name=&quot;errorMessage&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+			&lt;xsd:element maxOccurs=&quot;100&quot; minOccurs=&quot;0&quot; name=&quot;variables&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+		&lt;/xsd:sequence&gt;&#xd;
+	&lt;/xsd:complexType&gt;&#xd;
+&lt;/xsd:schema&gt;</string>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; version=&quot;1.0&quot;&gt;&#xd;
+	&lt;xs:element name=&quot;pingResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element minOccurs=&quot;0&quot; name=&quot;version&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&lt;xs:element name=&quot;ping&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence/&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns=&quot;http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0&quot; xmlns:common=&quot;http://schemas.telus.com/eca/common_types_2_1&quot; xmlns:ex=&quot;http://xmlschema.tmi.telus.com/xsd/common/exceptions/Exceptions_v1_0&quot; xmlns:iface=&quot;http://telus.com/wsdl/RMO/OrderMgmt/ResourceOrderReferenceService_1&quot; xmlns:ping=&quot;http://xmlschema.tmi.telus.com/xsd/Enterprise/BaseTypes/types/ping_v1&quot; xmlns:ror=&quot;http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:typ=&quot;http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2004/09/policy&quot; xmlns:wss=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0&quot;&gt;&#xd;
+&#xd;
+   &lt;xs:import namespace=&quot;http://schemas.telus.com/eca/common_types_2_1&quot;/&gt;&#xd;
+&#xd;
+	&lt;xs:import namespace=&quot;http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0&quot;/&gt;&#xd;
+&#xd;
+	&lt;xs:complexType name=&quot;NumberGroup&quot;&gt;&#xd;
+		&lt;xs:complexContent&gt;&#xd;
+			&lt;xs:extension base=&quot;typ:Reference&quot;&gt;&#xd;
+				&lt;xs:sequence&gt;&#xd;
+&#xd;
+					&lt;xs:element name=&quot;provinceCode&quot; type=&quot;common:ProvinceCode&quot;/&gt;&#xd;
+					&lt;xs:element maxOccurs=&quot;1000&quot; name=&quot;npaNXX&quot; nillable=&quot;true&quot; type=&quot;common:NpaNXX&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;networkId&quot; nillable=&quot;true&quot; type=&quot;common:NetworkID&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;numberLocation&quot; type=&quot;common:NumberLocation&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;defaultDealerCode&quot; nillable=&quot;true&quot; type=&quot;common:DealerCode&quot;/&gt;&#xd;
+					&lt;xs:element name=&quot;defaultSalesRepCode&quot; nillable=&quot;true&quot; type=&quot;common:SalesRepCode&quot;/&gt;&#xd;
+				&lt;/xs:sequence&gt;&#xd;
+			&lt;/xs:extension&gt;&#xd;
+		&lt;/xs:complexContent&gt;&#xd;
+&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:simpleType name=&quot;AccountTypeCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:enumeration value=&quot;B&quot;/&gt; &lt;!-- Business --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;I&quot;/&gt; &lt;!-- Consumer --&gt;&#xd;
+			&lt;xs:enumeration value=&quot;C&quot;/&gt; &lt;!-- Corporate --&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+&#xd;
+  &lt;xs:simpleType name=&quot;AccountSubTypeCode&quot;&gt;&#xd;
+		&lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+			&lt;xs:pattern value=&quot;(\p{Lu}|\d{1})&quot;/&gt;&#xd;
+		&lt;/xs:restriction&gt;&#xd;
+	&lt;/xs:simpleType&gt;&#xd;
+	&#xd;
+&lt;/xs:schema&gt;</string>
+                  </schemas>
+                  <encoding reference="../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                  <baseUri>http://ln99160.corp.ads:10000/rest/services/uddi:e0318b66-1824-11e4-b9fb-daeab9294710/wsdl</baseUri>
+                </schemas>
+                <namespaceManager>
+                  <namespacePrefix>
+                    <entry>
+                      <string>http://xmlschema.tmi.telus.com/xsd/Customer/BaseTypes/customer_information_reference_types_1_0</string>
+                      <string>ns1</string>
+                    </entry>
+                    <entry>
+                      <string>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</string>
+                      <string>ns0</string>
+                    </entry>
+                    <entry>
+                      <string>http://xmlschema.tmi.telus.com/xsd/Resource/BaseTypes/resource_order_reference_types_1_0</string>
+                      <string>ns2</string>
+                    </entry>
+                  </namespacePrefix>
+                </namespaceManager>
+              </model>
+              <isArray>false</isArray>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</namespaceURI>
+                    <localPart>numberGroup</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://xmlschema.tmi.telus.com/srv/RMO/OrderMgmt/ResourceOrderReferenceServiceRequestResponse_1_0</namespaceURI>
+          <localPart>getAvailableNumberGroupsResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://ln99160.corp.ads:10000/rest/services/uddi:e0318b66-1824-11e4-b9fb-daeab9294710/wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>RORS</connectorName>
+</metadata__catalog__entry>

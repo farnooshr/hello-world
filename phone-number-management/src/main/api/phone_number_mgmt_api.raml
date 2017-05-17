@@ -1,0 +1,334 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/d3e3727c-ca06-442f-9d6a-f434f9eec0e9
+title: "Phone Number Management"
+description: "Change "
+version: "1.0.0"
+mediaType:
+- "application/json"
+types:
+  ResponseStatus:
+    type: "object"
+    properties:
+      statusCd:
+        type: "string"
+      statusSubCd:
+        type: "string"
+        required: false
+      statusTxt:
+        type: "string"
+        required: false
+      systemErrorCd:
+        type: "string"
+        required: false
+      systemErrorTxt:
+        type: "string"
+        required: false
+      systemErrorTimeStamp:
+        type: "string"
+        required: false
+  NumberGroup:
+    type: "object"
+    properties:
+      numberGroupCd:
+        type: "string"
+        description: "number group code"
+        example: "TOR"
+      cityTxt:
+        type: "string"
+        description: "city name (localized)"
+      npaNxxList:
+        type: "array"
+        description: "list of 6-digit NPA-NXXs; `NPA` represents area code, `NXX`\
+          \ the next three digits in the number"
+        items:
+          type: "string"
+  ProvinceGroup:
+    type: "object"
+    properties:
+      provinceCd:
+        type: "string"
+        description: "2-character province code"
+      provinceTxt:
+        type: "string"
+        description: "province name (localized)"
+      numberGroupList:
+        type: "array"
+        description: "list of number groups"
+        items:
+          type: "NumberGroup"
+/account/{ban}/sub/{sub}/available-number-groups:
+  displayName: "Get available number groups (City/NPA-NXX groups) based on context"
+  description: "The subscriber's province and price plan are used to return a filtered\
+    \ list of `numberGroup` elements. A number group can be said to represent a list\
+    \ of NPA-NXX (area code plus first 3 numbers) for a given city. These are further\
+    \ grouped by province."
+  uriParameters:
+    ban:
+      type: "string"
+      description: "Billing Account Number"
+      example: "22478664"
+    sub:
+      type: "string"
+      description: "Subscriber Number, i.e. Telephone Number"
+      example: "4165765689"
+  get:
+    displayName: "Get available number groups"
+    description: "**SDF Access Level**: `MEMBER`"
+    queryParameters:
+      equipmenttypecd:
+        type: "string"
+        description: "Equipment type code"
+        enum:
+        - "D"
+        - "P"
+        - "Z"
+        required: false
+      language:
+        type: "string"
+        description: "localization language (e.g. for city names)"
+        enum:
+        - "en"
+        - "fr"
+        required: false
+    responses:
+      200:
+        description: "number groups returned"
+        body:
+          type: "object"
+          properties:
+            provinceGroupList:
+              type: "array"
+              items:
+                type: "ProvinceGroup"
+            status:
+              type: "ResponseStatus"
+              description: "|statusCd |statusSubCd |statusTxt | systemErrorCd | systemErrorTxt\
+                \ | Notes\n| --------| -------- | -------- | -------- | -------- |\
+                \ -------- |\n| 200 |      |  OK  |      |      |      |"
+          example:
+            !include examples/number-groups-sample.json
+      400:
+        description: "Invalid parameter - e.g. language other than `en` or `fr`"
+        body:
+          type: "object"
+          properties:
+            status:
+              type: "ResponseStatus"
+              description: "|statusCd |statusSubCd |statusTxt | systemErrorCd | systemErrorTxt\
+                \ | Notes\n| --------| -------- | -------- | -------- | -------- |\
+                \ -------- |\n| 400 | IS    |    |  Sub does not belong to BAN   |\
+                \      |      |\n| 400 | IB    |     |  BAN xxxx not found    |  \
+                \    |      |"
+      500:
+        description: "general failure in code or in one of the downstream service\
+          \ calls"
+        body:
+          type: "object"
+          properties:
+            status:
+              type: "ResponseStatus"
+              description: "statusCd |statusSubCd |statusTxt | systemErrorCd | systemErrorTxt\
+                \ | Notes\n| --------| -------- | -------- | -------- | -------- |\
+                \ -------- |\n| 500|  |    |      |      | Any policy/service exception\
+                \ thrown by underlying service     |\n| 500|    |     | general error\
+                \     |      | Any other caught  exception    |"
+              required: false
+          example:
+            !include examples/numgroups_500_sample.json  
+/account/{ban}/sub/{sub}/available-phone-numbers:
+  displayName: "search for available phone numbers"
+  description: "Based on a given NPA-NXX (first six digits) and a wildcard search string for the final four digits, return a list of available phone numbers."
+  uriParameters:
+    ban:
+      type: "string"
+      description: "Billing Account Number"
+      example: "22478664"
+    sub:
+      type: "string"
+      description: "Subscriber Number, i.e. Telephone Number"
+      example: "4165765689"
+  get:
+    displayName: "Get available phone numbers"
+    description: "**SDF Access Level**: `MEMBER`\n\nThe query parameters `province`,\
+      \ `numbergroup`, and `npanxx` are typically obtained based on the output of\
+      \ `available-number-groups`."
+    queryParameters:
+      province:
+        type: "string"
+        description: "2-character province code"
+        example: "BC"
+      numbergroup:
+        type: "string"
+        description: "number group code representing the selected city"
+        example: "AJX"
+      npanxx:
+        type: "string"
+        description: "6-digit string representing the selected area code / first 3\
+          \ digits of the phone number"
+        example: "905447"
+      search:
+        type: "string"
+        description: "4-digit string representing the desired last 4 digits or pattern\
+          \ (using * as wildcard characters) for search (in conjunction with npanxx\
+          \ parameter)"
+        default: "****"
+        minLength: 4
+        maxLength: 4
+        example: "47**"
+      asianfriendly:
+        type: "string"
+        description: "indicates whether to exclude digits (e.g. 4) unfavoured in Asian\
+          \ cultures."
+        default: "n"
+        enum:
+        - "y"
+        - "n"
+        required: false
+      maxresults:
+        type: "integer"
+        description: "maximum number of matching available phone numbers to return"
+        required: false
+        example: 25
+    responses:
+      200:
+        body:
+          type: "object"
+          properties:
+            phoneNumberList:
+              type: "array"
+              items:
+                type: "string"
+            status:
+              type: "ResponseStatus"
+              description: "|statusCd |statusSubCd |statusTxt | systemErrorCd | systemErrorTxt\
+                \ | Notes\n| --------| -------- | -------- | -------- | -------- |\
+                \ -------- |\n| 200 |      | OK   |      |      | This will be returned\
+                \ even if no available numbers are returned (empty list)     |"
+          example:
+            !include examples/availablenumbers_200_sample.json
+      400:
+        body:
+          type: "object"
+          properties:
+            status:
+              type: "ResponseStatus"
+              description: "|statusCd |statusSubCd |statusTxt | systemErrorCd | systemErrorTxt\
+                \ | Notes\n| --------| -------- | -------- | -------- | -------- |\
+                \ -------- |\n| 400 |      |    |      |      |  Any validation error\
+                \ related to input parameters   |"
+              required: false
+      500:
+        body:
+          type: "object"
+          properties:
+            status:
+              type: "ResponseStatus"
+              description: "|statusCd |statusSubCd |statusTxt | systemErrorCd | systemErrorTxt\
+                \ | Notes\n| --------| -------- | -------- | -------- | -------- |\
+                \ -------- |\n| 500 |      |    |      |      | Any policy/service\
+                \ exception thrown by the underlying service.      |\n| 500 |    \
+                \  | general error   |      |      | Any exception not caught elsewhere.\
+                \    |"
+              required: false
+/account/{ban}/sub/{sub}/phone-number-change-eligibility:
+  displayName: "check eligibility for phone number change"
+  description: "Determine whether the subscriber\
+      \ is eligible to change the phone number. The change will be disallowed if:\n\
+      * the number was already changed within the current bill cycle\n* the subscriber\
+      \ was recently activated and is within the \"exchange period\"\n* the account\
+      \ or subscriber is suspended\n* a port request is already in progress"
+  uriParameters:
+    ban:
+      type: "string"
+      description: "Billing Account Number"
+      example: "22478664"
+    sub:
+      type: "string"
+      description: "Subscriber Number, i.e. Telephone Number"
+      example: "4165765689"
+  get:
+    displayName: "Check whether this subscriber is eligible to change phone number"
+    description: "**SDF Access Level**: `MEMBER`"
+    responses:
+      200:
+        body:
+          type: "object"
+          properties:
+            status:
+              type: "ResponseStatus"
+              description: "|statusCd |statusSubCd |statusTxt | systemErrorCd | systemErrorTxt\
+                \ | Notes\n| --------| -------- | -------- | -------- | -------- |\
+                \ -------- |\n| 200 |      | OK   |      |      |      |\n| 200 |\
+                \ SUSP-A     | Account suspended    |      |      |      |\n| 200\
+                \ | SUSP-S     | Subscriber suspended    |      |      |      |\n\
+                | 200 | EXCHANGE     | Subscriber in exchange period    |      | \
+                \     |      |\n| 200 | PORTOUT     | Subscriber in the process of\
+                \ porting out    |      |      |      |\n| 200 | PORTIN     | Subscriber\
+                \ in the process of porting in    |      |      |      |\n| 200 |\
+                \ LIMIT     | Exceeded allowed number of changes within the period\
+                \    |      |      |      |"
+          example:
+            value: "{\n  “status”: {\n    “statusCd”: “200”,\n    “statusTxt”: “OK”\
+              ,\n  }\n}"
+            strict: false
+      400:
+        body:
+          type: "object"
+          properties:
+            status:
+              type: "ResponseStatus"
+              description: "|statusCd |statusSubCd |statusTxt | systemErrorCd | systemErrorTxt\
+                \ | Notes\n| --------| -------- | -------- | -------- | -------- |\
+                \ -------- |\n| 400 |  IS    |    | Sub does not match BAN     | \
+                \     |      |\n| 400 | SUSP-A     |     |  BAN xxxx not found   \
+                \ |      |      |"
+      500:
+        body:
+          type: "object"
+          properties:
+            status:
+              type: "ResponseStatus"
+              description: "|statusCd |statusSubCd |statusTxt | systemErrorCd | systemErrorTxt\
+                \ | Notes\n| --------| -------- | -------- | -------- | -------- |\
+                \ -------- |\n| 500 | ES     | ExchangeService unavailable   |   \
+                \   |      | If this fails it isn't possible to validate whether the\
+                \ subscriber is within the exchange period.     |\n| 500 |      |\
+                \ general error   |      |      | Any exception not caught elsewhere.\
+                \    |"
+              required: false
+/account/{ban}/sub/{sub}/phone-number:
+  displayName: "Change the phone number"
+  description: "Perform the phone number change."
+  uriParameters:
+    ban:
+      type: "string"
+      description: "Billing Account Number"
+      example: "22478664"
+    sub:
+      type: "string"
+      description: "Subscriber Number, i.e. Telephone Number"
+      example: "4165765689"
+  put:
+    body:
+      type: "object"
+      properties:
+        newPhoneNumber:
+          type: "string"
+        ssfCd:
+          type: "string"
+          required: false
+    responses:
+      200:
+        body:
+          type: "object"
+          properties:
+            status:
+              type: "ResponseStatus"
+              required: false
+            warningErrorList:
+              type: "array"
+              required: false
+              items:
+                type: "string"
+          example: !include examples/PUT_phone_number_200_sample.json
+      
